@@ -1,0 +1,38 @@
+.upper-part{
+    background: url(../assets/images/weatheris.jpeg);
+    top: 0;
+    height: 400px;
+}
+
+.log{
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+.tag{
+    color: white;
+}
+
+.dropin{
+ padding-top: 85px;
+}
+
+ul{
+    list-style: none;
+}
+
+.text-custom{
+    color:lightskyblue;
+}
+
+.myFooter{
+    color:white;
+    margin-top: 30px;
+    background-color: royalblue;
+    height: 30px;
+
+}
