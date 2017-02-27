@@ -2,6 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; frame-src *"/>   
   <title>NgWeather</title>
   <base href="/">
 
@@ -16,6 +17,13 @@
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  
+  <!--allow mixed content-->
+  <!--http://api.openweathermap.org/data/2.5/ 
+  https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css 
+  https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ; script-src 'safe-inline'; style-src 'safe-inline'">-->
+
+  <!--content="script-src 'unsafe-inline'; style-src 'unsafe-inline'"-->
 </head>
 <body>
   <app-root>Loading...</app-root>

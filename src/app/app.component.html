@@ -20,9 +20,9 @@
       <h3>Weather information for {{today | date:'fullDate'}} </h3>
       <h4>Today's weather</h4>
       <h4 class="text-success"><i class="fa fa-map-marker" aria-hidden="true"> {{currentLocation}}</i></h4>
-      <p>Maximum Temperature:{{maxTemp}} </p>
-      <p>Average Temperature: {{avgTemp}} </p>
-      <p>Minimum Temperature: {{minTemp}}</p>
+      <p>Maximum Temperature:{{maxTemp}} &#8457;</p>
+      <p>Average Temperature: {{avgTemp}} &#8457;</p>
+      <p>Minimum Temperature: {{minTemp}} &#8457;</p>
       <p>Humidity: {{humidity}} </p>
       <p>Pressure: {{pressure}} </p>
       <div><button type="button" class="btn btn-primary" (click)="showBtn()">Get 7 days forecast</button></div>
@@ -33,8 +33,8 @@
             <h4><u>Day {{i + 1}}</u></h4>
               <p>Humidity: {{daily.humidity}}</p>
               <p>Pressure: {{daily.pressure}}</p>
-              <p>Maximum Temparature: {{daily.temp.max}}</p>
-              <p>Minimum Temparature: {{daily.temp.min}}</p>
+              <p>Maximum Temparature: {{daily.temp.max}} &#8457;</p>
+              <p>Minimum Temparature: {{daily.temp.min}} &#8457;</p>
               <p>General outlook: {{daily.weather[0].description}}</p>
         </div>
         <button class="btn btn-success" (click)="showForecast = false">Hide Forecast</button>
